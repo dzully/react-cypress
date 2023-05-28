@@ -1,22 +1,5 @@
 describe("template spec", () => {
   it("insert item into todo list", () => {
-    // await page.goto("http://localhost:5173/");
-
-    // await page.getByTestId("todoItemInput").click();
-    // await page.getByTestId("todoItemInput").fill("cake");
-    // await page.getByTestId("todoItemSubmit").click();
-    // await page.waitForSelector("ul li:has-text('cake')");
-
-    // await page.getByTestId("todoItemInput").click();
-    // await page.getByTestId("todoItemInput").fill("pill");
-    // await page.getByTestId("todoItemSubmit").click();
-    // await page.waitForSelector("ul li:has-text('pill')");
-
-    // await page.getByTestId("todoItemInput").click();
-    // await page.getByTestId("todoItemInput").fill("rice");
-    // await page.getByTestId("todoItemSubmit").click();
-    // await page.waitForSelector("ul li:has-text('rice')");
-
     cy.visit("http://localhost:5174");
     cy.get('[data-testid="todoItemInput"]').click();
     cy.get('[data-testid="todoItemInput"]').type("cake");
